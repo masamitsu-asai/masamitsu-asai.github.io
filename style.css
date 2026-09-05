@@ -150,6 +150,12 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+button[type="submit"][disabled] {
+  color: #666;
+  border-color: #999;
+  cursor: default;
+}
+
 /* 特定商取引法に基づく表記 */
 .tokushoho dt {
   font-weight: 600;
