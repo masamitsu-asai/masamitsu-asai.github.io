@@ -1,0 +1,177 @@
+/* 主治医と合わない：白地に文字だけ。装飾・画像・アイコン・外部フォントは使わない */
+
+html {
+  background: #fff;
+  color: #000;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+  max-width: 38em;
+  font-family: system-ui, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  line-height: 1.9;
+  overflow-wrap: anywhere; /* 長い英字や URL で横スクロールを出さない */
+}
+
+a {
+  color: #1f3864; /* 濃紺 */
+  text-decoration: underline;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 1.5em 0 0.75em;
+}
+
+h2 {
+  font-size: 1.15em;
+  margin: 2em 0 0.5em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+/* 上部：サイト名 */
+.site-header {
+  margin-bottom: 2.5em;
+}
+
+.site-header .site-name {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.site-header h1.site-name {
+  font-size: 1.6em;
+}
+
+.site-header .tagline {
+  margin: 0.25em 0 0;
+}
+
+/* 連載一覧 */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  margin-bottom: 0.5em;
+}
+
+.post-list time {
+  margin-right: 0.75em;
+  font-variant-numeric: tabular-nums;
+}
+
+.post-meta {
+  margin-bottom: 0;
+}
+
+/* 下部リンク */
+.site-nav {
+  margin-top: 3em;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav li {
+  margin-bottom: 0.25em;
+}
+
+/* 商品 */
+.button {
+  display: inline-block;
+  padding: 0.3em 1.5em;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+
+.button[aria-disabled="true"] {
+  color: #666;
+  border-color: #999;
+  cursor: default;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* 自己紹介の余白 */
+.blank {
+  min-height: 6em;
+}
+
+/* 問い合わせフォーム */
+form label {
+  display: block;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.4em;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+}
+
+button[type="submit"] {
+  padding: 0.3em 1.5em;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+/* 特定商取引法に基づく表記 */
+.tokushoho dt {
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+.tokushoho dd {
+  margin: 0;
+}
+
+/* 下部 */
+.site-footer {
+  margin-top: 4em;
+  font-size: 0.9em;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1.5rem 1rem 3rem;
+  }
+}
